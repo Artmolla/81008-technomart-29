@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Artem Gafurbaiev](https://up.htmlacademy.ru/htmlcss/29/user/81008).
-* Наставник: `Владислав Донченко`.
+* Наставник: [Владислав Донченко](https://htmlacademy.ru/profile/id608811).
 
 ---
 
