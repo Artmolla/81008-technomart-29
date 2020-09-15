@@ -26,7 +26,7 @@
     --click-blue: #1D2739;
     --click-black: #161D29;
 }
-
+/* Глобальные стили */
 *, *::before, *::after { box-sizing: border-box; }
 
 body {
@@ -49,6 +49,20 @@ a {
     cursor: pointer;
 }
 
+.content-centerer {
+    padding-left: calc(50vw - 470px);
+    padding-right: calc(50vw - 470px);
+}
+
+.heading-container {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: var(--basic-light-blue);
+    background-color: var(--basic-linen);
+}
+
 .button {
     font-size: 14px;
     line-height: 18px;
@@ -58,12 +72,7 @@ a {
     background-color: var(--basic-red);
     text-transform: uppercase;
 }
-
-.content-centerer {
-    padding-left: calc(50vw - 470px);
-    padding-right: calc(50vw - 470px);
-}
-
+/* Хедер */
 .page-header {
     color: var(--basic-white);
     background: linear-gradient(to bottom, var(--basic-navy-blue) 42px, var(--basic-dark-white) 42px, var(--basic-dark-white) 100%);
@@ -136,11 +145,7 @@ a {
     line-height: 24px;
     color: var(--basic-white);
 }
-
-.page-content__services {
-    background-color: var(--basic-dark-white);
-}
-
+/* Промо секция */
 .promo-section {
     color: var(--basic-white);
 }
@@ -201,15 +206,7 @@ a {
     font-weight: normal;
 }
 
-.heading-container {
-    font-size: 30px;
-    line-height: 30px;
-    font-weight: normal;
-    text-transform: uppercase;
-    color: var(--basic-light-blue);
-    background-color: var(--basic-linen);
-}
-
+/* Популярные товары */
 .popular-goods__list {
     font-family: 'PT Sans', sans-serif;
     font-size: 18px;
@@ -258,6 +255,8 @@ a {
     border: 3px solid var(--basic-green);
     color: var(--basic-light-blue);
 }
+
+/* Сервисы */
 .services {
     background-color: var(--basic-dark-white);
 }
@@ -299,7 +298,7 @@ a {
     text-transform: uppercase;
     color: var(--basic-light-blue);
 }
-
+/* О нас */
 .about-us__heading,
 .contact-info__heading {
     font-size: 30px;
@@ -322,6 +321,7 @@ a {
     font-weight: normal;
 }
 
+/* Футер */
 .page-footer {
     color: var(--basic-white);
     background: linear-gradient(to top, var(--basic-navy-blue) 107px, var(--basic-light-blue) 107px, var(--basic-light-blue) 100%);
@@ -357,7 +357,7 @@ a {
 
 
 
-/* interactive elements */
+/* Интерактивные элементы */
 /* hover */
 .page-header__navigation a:hover,
 .services__navigation-list a:hover {
