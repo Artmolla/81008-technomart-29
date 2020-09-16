@@ -21,7 +21,7 @@
 :root {
     --basic-white: #FFFFFF;
     --basic-opacity-white: rgba(255, 255, 255, .3);
-    --basic-dark-white: #f3f7f8;
+    --basic-dark-white: #F3F7F8;
     --basic-black: #000000;
     --basic-light-grey: #C5C5C5;
     --basic-red: #EE3643;
@@ -36,6 +36,8 @@
     --special-light-green: #8ED78F;
     --special-light-yellow: #FFD180;
     --special-grey: #A9A9A9;
+    --special-light-grey: #E5E5E5;
+    --special-lace: #F7F3EC;
     /* hover colors */
     --hover-green: #5FBB2D;
     --hover-red: #CA2C37;
@@ -229,7 +231,7 @@ a {
 }
 
 /* Популярные товары */
-.popular-goods__list {
+.goods__list {
     font-family: 'PT Sans', sans-serif;
     font-size: 18px;
     line-height: 20px;
@@ -239,7 +241,7 @@ a {
     padding: 0;
 }
 
-.popular-goods__price {
+.goods__price {
     font-family: PT Sans;
     font-size: 17px;
     line-height: 18px;
@@ -250,7 +252,7 @@ a {
     background-color: var(--basic-red);
 }
 
-.popular-goods__discount-price {
+.goods__discount-price {
     font-family: 'PT Sans', sans-serif;
     font-size: 17px;
     line-height: 18px;
@@ -377,7 +379,109 @@ a {
     color: var(--special-light-yellow);
 }
 
+/* CATALOG */
+.catalog-bredcrumbs {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: normal;
+    font-style: normal;
+    text-transform: uppercase;
+    list-style: none;
+    padding: 0;
+}
 
+.catalog-content__heading {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: var(--basic-light-blue);
+    background-color: var(--basic-dark-white);
+}
+
+.sorting-menu {
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    background-color: var(--special-lace);
+}
+.sorting-menu__heading {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: normal;
+    font-style: normal;
+    background-color: var(--special-lace);
+}
+
+.sorting-menu__list {
+    list-style: none;
+    padding: 0;
+}
+.sorting-menu__button {
+    list-style: none;
+    padding: 0;
+    opacity: .3;
+}
+
+.filters {
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: var(--basic-black);
+}
+
+.filters__heading {
+    font-size: 13px;
+    line-height: 18px;
+    background-color: var(--special-lace);
+}
+
+.filters__name {
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.filters__show-btn {
+    border: 1px solid var(--special-light-grey);
+}
+.perforators_bredcrumbs {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: normal;
+    font-style: normal;
+    color: var(--basic-black);
+    list-style: none;
+    padding: 0;
+}
+
+.perforators_bredcrumbs-item {
+    border: 1px solid var(--special-light-grey);
+    background-color: var(--basic-white);
+}
+
+.about-perforators {
+    background-color: var(--basic-dark-white);
+}
+.about-perforators__heading {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.about-perforators__text {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: normal;
+}
 
 /* Интерактивные элементы */
 /* hover */
@@ -408,8 +512,18 @@ a {
     border-color: var(--hover-light-blue);
 }
 
-.page-footer__navigation-item a:hover {
+.page-footer__navigation a:hover,
+.page-footer__social-link:hover {
     text-decoration: underline;
+}
+
+.page-footer__socials-list-item:hover {
+    background-color: var(--hover-red);
+}
+
+.sorting-menu__button:hover {
+    opacity: 1;
+    border-bottom: 1px dotted var(--hover-red);
 }
 /* click */
 .services__navigation-list a:active {
@@ -425,7 +539,7 @@ a {
 }
 .personal-area__button:active {
     background-color: var(--basic-white);
-    color: var(--basik-light-grey);
+    color: var(--basic-light-grey);
 }
 
 .promo-section__services-button:active {
@@ -446,6 +560,18 @@ a {
 
 .page-footer__navigation-item a:active {
     opacity: .5;
+}
+.page-footer__social-link:active {
+    color: var(--click-red);
+}
+
+.sorting-menu__button:active {
+    color: var(--click-red);
+    border: none;
+}
+
+.perforators_bredcrumbs-item a:active {
+    border: 1px solid var(--click-red);
 }
 /* focus */
 .page-header__navigation a:focus,
