@@ -5,17 +5,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Техномарт</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-    rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header class="page-header content-centerer">
-    <!-- background -->
+  <header class="page-header container">
     <a class="page-header__logo"><img src="img/corporate-logo.png"
         alt="Интернет-магазин строительных материалов и инструментов для ремонта" width="220" height="47"></a>
     <form id="search-form" action="#" method="get">
@@ -25,17 +20,16 @@
     </form>
     <ul class="page-header__functional-menu">
       <li class="page-header__functional-menu-item">
-        <a href="#" class="page-header__functional-menu-button page-header__bookmarks-button">Закладки:
+        <a href="#" class="page-header__functional-menu-button page-header__functional-menu-button_bookmarks">Закладки:
           <span>0</span></a>
       </li>
       <li class="page-header__functional-menu-item">
-        <a href="#" class="page-header__functional-menu-button page-header__basket-button">Корзина: <span>0</span></a>
+        <a href="#" class="page-header__functional-menu-button page-header__functional-menu-button_basket">Корзина: <span>0</span></a>
       </li>
       <li class="page-header__functional-menu-item">
-        <a href="#" class="page-header__functional-menu-button page-header__checkout-button">Оформить заказ</a>
+        <a href="#" class="page-header__functional-menu-button page-header__functional-menu-button_button">Оформить заказ</a>
       </li>
     </ul>
-    <!-- background -->
     <h1 class="page-header__heading">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
     <address class="page-header__contact-info">
       <a class="page-header__contact-info-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
@@ -58,7 +52,7 @@
     </nav>
   </header>
   <main class="page-content">
-    <section class="promo-section content-centerer">
+    <section class="promo-section container">
       <h2 class="visually-hidden">Товары и услуги</h2>
       <ul class="promo-section__services">
         <li class="promo-section__services-item promo-section__services-item_yellow">Материалы <a
@@ -98,7 +92,7 @@
         </li>
       </ul>
     </section>
-    <section class="popular-goods content-centerer">
+    <section class="popular-goods container">
       <div class="heading-container">
         <h2>Популярные товары:</h2>
         <a href="#" class="button">Все популярные товары</a>
@@ -154,7 +148,7 @@
         </li>
       </ul>
     </section>
-    <section class="manufacturers content-centerer">
+    <section class="manufacturers container">
       <div class="heading-container">
         <h2>Популярные производители:</h2>
         <a href="#" class="button">Все производители</a>
@@ -202,7 +196,7 @@
         </li>
       </ul>
     </section>
-    <section class="services content-centerer">
+    <section class="services container">
       <h2 class="services__heading">Сервисы</h2>
       <p class="services__text">Хороший интернет-магазин отличается от плохого не только ценами!</p>
       <p class="services__text">Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
@@ -211,16 +205,16 @@
         <li class="services__navigation-list-item"><a href="#">Гарантия</a></li>
         <li class="services__navigation-list-item"><a href="#">Кредит</a></li>
       </ul>
-      <ul class="services_list">
-        <li class="services_list-item">
-          <h3 class="services_list-item-heading">Доставка</h3>
+      <ul class="services__list">
+        <li class="services__list-item">
+          <h3 class="services__list-item-heading">Доставка</h3>
           <p class="services__text">Мы с удовольствием доставим ваш товар прямо<br>
             к вашему подъезду совершенно бесплатно!<br>
             Ведь мы неплохо заработаем,<br>
             поднимая его на ваш этаж!</p>
         </li>
-        <li class="services_list-item">
-          <h3 class="services_list-item-heading">Гарантия</h3>
+        <li class="services__list-item">
+          <h3 class="services__list-item-heading">Гарантия</h3>
           <p class="services__text">
             Если купленный у нас товар поломается или заискрит,<br>
             а также в случае пожара, спровоцированного его<br>
@@ -229,8 +223,8 @@
             Дом уж восстановите как-нибудь сами.
           </p>
         </li>
-        <li class="services_list-item">
-          <h3 class="services_list-item-heading">Кредит</h3>
+        <li class="services__list-item">
+          <h3 class="services__list-item-heading">Кредит</h3>
           <p class="services__text">
             Залезть в долговую яму стало проще!<br>
             Кредитные консультанты придут вам на помощь.
@@ -239,7 +233,7 @@
         </li>
       </ul>
     </section>
-    <section class="about-us content-centerer">
+    <section class="about-us container">
       <h2 class="about-us__heading">Компания «Техномарт»</h2>
       <p class="about-us__text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
         строительства не оставит
@@ -262,7 +256,7 @@
       </section>
     </section>
   </main>
-  <footer class="page-footer content-centerer">
+  <footer class="page-footer container">
     <a>
       <img src="img/footer-corporate-logo.png" alt="Интернет-магазин строительных материалов и инструментов для ремонта"
         width="220" height="68">

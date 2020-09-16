@@ -1,3 +1,23 @@
+@font-face {
+    font-family: 'Cuprum';
+    src: url('../fonts/cuprum.woff2') format('woff2'),
+         url('../fonts/cuprum.woff') format('woff'),
+         url('../fonts/cuprumbold.woff2') format('woff2'),
+         url('../fonts/cuprumbold.woff') format('woff'),
+         url('../fonts/cuprumitalic.woff2') format('woff2'),
+         url('../fonts/cuprumitalic.woff') format('woff'),
+         url('../fonts/cuprumbolditalic.woff2') format('woff2'),
+         url('../fonts/cuprumbolditalic.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'Cuprum';
+    src: url('../fonts/ptsans.woff2') format('woff2'),
+         url('../fonts/ptsans.woff') format('woff'),
+         url('../fonts/ptsansbold.woff2') format('woff2'),
+         url('../fonts/ptsansbold.woff') format('woff');
+  }
+
 :root {
     --basic-white: #FFFFFF;
     --basic-opacity-white: rgba(255, 255, 255, .3);
@@ -26,6 +46,7 @@
     --click-blue: #1D2739;
     --click-black: #161D29;
 }
+
 /* Глобальные стили */
 *, *::before, *::after { box-sizing: border-box; }
 
@@ -49,9 +70,10 @@ a {
     cursor: pointer;
 }
 
-.content-centerer {
+.container {
     padding-left: calc(50vw - 470px);
     padding-right: calc(50vw - 470px);
+    min-width: 940px;
 }
 
 .heading-container {
@@ -287,11 +309,11 @@ a {
     color: var(--basic-white);
     background-color: var(--basic-light-blue);
 }
-.services_list {
+.services__list {
     list-style: none;
     padding: 0;
 }
-.services_list-item-heading {
+.services__list-item-heading {
     font-size: 30px;
     line-height: 30px;
     font-weight: normal;
