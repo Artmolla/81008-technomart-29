@@ -231,7 +231,7 @@ a {
 }
 
 /* Популярные товары */
-.goods__list {
+.goods {
     font-family: 'PT Sans', sans-serif;
     font-size: 18px;
     line-height: 20px;
@@ -262,7 +262,7 @@ a {
     text-decoration-line: line-through;
     text-transform: uppercase;
 }
-.button-container {
+.goods__action-list {
     list-style: none;
     padding: 0;
     font-size: 14px;
@@ -270,12 +270,12 @@ a {
     text-transform: uppercase;
 }
 
-.button-container__buy-button {
+.goods__action_buy-button {
     background-color: var(--basic-green);
     box-shadow: inset 0px -3px 0px #367315;
 }
 
-.button-container__bookmarks-button {
+.goods__action_bookmarks-button {
     border: 3px solid var(--basic-green);
     color: var(--basic-light-blue);
 }
