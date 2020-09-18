@@ -450,7 +450,7 @@ a {
 .filters__show-btn {
     border: 1px solid var(--special-light-grey);
 }
-.perforators_bredcrumbs {
+.bredcrumbs {
     font-family: 'PT Sans', sans-serif;
     font-size: 13px;
     line-height: 18px;
@@ -461,7 +461,7 @@ a {
     padding: 0;
 }
 
-.perforators_bredcrumbs-item {
+.bredcrumbs__item {
     border: 1px solid var(--special-light-grey);
     background-color: var(--basic-white);
 }
@@ -570,7 +570,7 @@ a {
     border: none;
 }
 
-.perforators_bredcrumbs-item a:active {
+.bredcrumbs__item a:active {
     border: 1px solid var(--click-red);
 }
 /* focus */
