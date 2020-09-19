@@ -279,7 +279,10 @@ a {
     border: 3px solid var(--basic-green);
     color: var(--basic-light-blue);
 }
-
+.manufacturers__list {
+    list-style: none;
+    padding: 0;
+}
 /* Сервисы */
 .services {
     background-color: var(--basic-dark-white);
