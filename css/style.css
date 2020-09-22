@@ -469,6 +469,8 @@
   .sercices__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 60px;
+    padding-bottom: 103px;
   }
   
   .services__heading {
@@ -484,6 +486,7 @@
     font-size: 13px;
     line-height: 24px;
     font-weight: normal;
+    margin: 0;
     grid-column: span 3;
   }
   
@@ -493,16 +496,31 @@
     font-weight: bold;
     list-style: none;
     padding: 0;
+    margin-top: 70px;
+    margin-right: 80px;
   }
   
   .services__navigation-list-item {
+    width: 240px;
+    height: 61px;
     color: var(--basic-white);
     background-color: var(--basic-light-blue);
+  }
+
+  .services__navigation-list-button {
+    display: block;
+    width: 100%;
+    min-height: 100%;
+    line-height: 61px;
+    padding-left: 22px;
   }
   
   .services__list {
     list-style: none;
     padding: 0;
+    margin-top: 40px;
+    grid-column: span 2;
+    background: no-repeat right 35px url('../img/bg/bg-trunk.png');
   }
   
   .services__list-item-heading {
