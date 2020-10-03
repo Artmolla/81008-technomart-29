@@ -773,11 +773,6 @@ figcaption {
 	margin-bottom: 30px;
 }
 
-.contact-info .button {
-	width: 100%;
-	margin-top: 20px;
-}
-
 .about-us__heading,
 .contact-info__heading {
 	font-size: 30px;
@@ -797,6 +792,11 @@ figcaption {
 
 .about-us .button {
 	width: 220px;
+}
+
+.contact-info .button {
+	width: 100%;
+	margin-top: 20px;
 }
 
 .about-us__working-with-list {
