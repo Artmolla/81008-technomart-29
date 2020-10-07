@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="UTF-8" />
@@ -9,26 +9,59 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="page__body catalog">
   <header class="page-header">
     <div class="page-header__top">
       <div class="page-header__functional-area container">
-        <a class="page-header__logo" href="/index.html"><img src="img/corporate-logo.svg"
-            alt="Интернет-магазин строительных материалов и инструментов для ремонта" width="220" height="47"></a>
+        <a class="page-header__logo">
+          <svg width="108" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M103.847 2.659v14.79h-2.113V2.66h-3.756V1.015h9.626V2.66h-3.757zm-8.135 8.698a3.02 3.02 0 01-1.385.986c-.556.196-1.217.294-1.984.294a12 12 0 01-1.22-.07c-.455-.048-.83-.102-1.128-.165v5.048h-2.113V1.25a11.069 11.069 0 011.796-.364c.603-.07 1.256-.106 1.96-.106.94 0 1.738.098 2.396.294.657.195 1.19.52 1.596.974.407.454.704 1.057.892 1.808.188.751.282 1.683.282 2.794 0 1.142-.09 2.097-.27 2.864-.18.767-.454 1.382-.822 1.843zm-1.197-6.82c-.118-.564-.301-1.01-.552-1.338a1.995 1.995 0 00-.95-.693c-.384-.133-.842-.2-1.374-.2h-1.644v8.687h1.644c.532 0 .99-.066 1.373-.2.384-.132.7-.363.951-.692.25-.329.434-.775.552-1.338.117-.564.176-1.268.176-2.113s-.059-1.55-.176-2.113zM82.6 13.224h-4.696l-1.056 4.226h-2.114l3.992-16.435h3.052l3.991 16.435h-2.113L82.6 13.224zm-2.301-9.861h-.094l-1.949 8.217h3.992l-1.95-8.217zM70.156 5.24h-.117l-3.405 10.096h-2.113L61.117 5.24H61l-.705 12.209h-2.113l.94-16.435h2.582l3.827 11.27h.094l3.827-11.27h2.582l.94 16.435H70.86L70.157 5.24zM54.38 15.924c-.438.642-.967 1.095-1.585 1.361-.618.267-1.326.4-2.125.4-.798 0-1.506-.133-2.125-.4-.618-.266-1.146-.72-1.584-1.361-.439-.642-.771-1.507-.998-2.595-.227-1.087-.34-2.453-.34-4.097 0-1.643.113-3.009.34-4.097.227-1.087.56-1.952.998-2.594.438-.642.966-1.096 1.584-1.362C49.163.913 49.871.78 50.67.78c.799 0 1.507.133 2.125.4.618.265 1.147.72 1.585 1.361.438.642.77 1.507.998 2.594.227 1.088.34 2.454.34 4.097 0 1.644-.113 3.01-.34 4.097-.227 1.088-.56 1.953-.998 2.595zM53.358 5.758c-.165-.908-.38-1.628-.646-2.16-.266-.533-.58-.9-.94-1.104a2.218 2.218 0 00-1.103-.305c-.375 0-.743.102-1.103.305-.36.204-.673.571-.94 1.104-.265.532-.48 1.252-.645 2.16-.164.907-.247 2.066-.247 3.474 0 1.41.083 2.567.247 3.475.164.908.38 1.628.646 2.16.266.532.579.9.939 1.104.36.203.728.305 1.103.305.376 0 .744-.102 1.104-.305.36-.204.673-.572.939-1.104.266-.532.481-1.252.645-2.16.165-.908.247-2.066.247-3.475 0-1.408-.082-2.567-.246-3.474zM40.69 9.937h-4.93v7.513h-2.114V1.015h2.114v7.278h4.93V1.015h2.113V17.45h-2.113V9.937zM29.54 17.45l-2.935-7.044-2.935 7.044h-2.113l3.522-8.452-3.17-7.983h2.113l2.583 6.574 2.582-6.574H31.3l-3.17 7.983 3.523 8.452H29.54zM12.283 1.015h7.983V2.66h-5.87v5.4h5.165v1.643h-5.165v6.104h5.87v1.644h-7.983V1.015zM6.648 17.45H4.535V2.659H.78V1.015h9.626V2.66H6.648v14.79z"
+              fill="#fff" />
+          </svg>
+        </a>
         <form class="search-form" id="search-form" action="#" method="get">
-          <label class="site-search__label" for="site-search-field">Поиск по содержимому сайта</label>
+          <svg class="search-form__icon" class="" width="17" height="17" viewBox="0 0 17 17" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g opacity="0.3">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z"
+                fill="white" />
+            </g>
+          </svg>
           <input type="search" name="site-search" id="site-search-field" class="site-search" placeholder="Поиск:">
+          <label class="site-search__label" for="site-search-field">Поиск по содержимому сайта</label>
           <button class="visually-hidden" aria-label="Поиск по содержанию сайта"></button>
         </form>
         <ul class="page-header__functional-menu list-reset">
           <li class="page-header__functional-menu-item">
+            <svg class="bookmarks-icon" width="14" height="16" viewBox="0 0 14 16" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <g opacity="0.3">
+                <path
+                  d="M14 15C14 15.55 13.632 15.741 13.182 15.426L7.819 11.661C7.369 11.346 6.632 11.346 6.182 11.661L0.818 15.426C0.368 15.741 0 15.55 0 15V1C0 0.45 0.45 0 1 0H13C13.55 0 14 0.45 14 1V15Z"
+                  fill="white" />
+              </g>
+            </svg>
             <a href="#"
               class="page-header__functional-menu-button page-header__functional-menu-button_bookmarks">Закладки:
               <span>0</span></a>
           </li>
           <li class="page-header__functional-menu-item">
+            <svg class="card-icon" width="15" height="15" viewBox="0 0 15 15" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <g opacity="0.3">
+                <path
+                  d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"
+                  fill="white" />
+                <path
+                  d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"
+                  fill="white" />
+                <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white" />
+              </g>
+            </svg>
             <a href="#" class="page-header__functional-menu-button page-header__functional-menu-button_basket">Корзина:
-              <span>0</span></a>
+              <span>10</span></a>
           </li>
           <li class="page-header__functional-menu-item">
             <a href="#"
@@ -44,9 +77,25 @@
         <a class="page-header__contact-info-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>г. Санкт-Петербург, ул.
         Б.Конюшенная, д. 19/8</address>
       <div class="personal-area personal-area_loged-in">
-        <a class="personal-area__button personal-area__button_user" href="#">Равшан Джамшутович</a>
-        <a class="personal-area__button personal-area__button_orders" href="#">Мои заказы</a>
-        <a class="personal-area__button personal-area__button_cabinet" href="#">Личный кабинет</a>
+        <div class="button-container">
+          <svg class="user-icon" width="20" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39C-.026 14.902 0 18 0 18h20s.025-3.099-2.119-3.834z"
+              fill="#C5C5C5" />
+          </svg>
+          <a class="personal-area__button personal-area__button_user" href="#">Равшан Джамшутович</a>
+          <svg class="log-out-icon" width="20" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 8.5L11.125 0v6h-6v5h6v6L20 8.5z" fill="#C5C5C5" />
+            <path
+              d="M2.106 13.952V3.048c.018-.376.17-1.057 1.01-1.057h5.027V0H3.116C.938 0 .112 1.81.086 3.027v10.946C.113 15.189.939 17 3.117 17h5.027v-1.99H3.116c-.84 0-.992-.683-1.01-1.058z"
+              fill="#C5C5C5" />
+          </svg>
+
+        </div>
+        <div class="button-container">
+          <a class="personal-area__button personal-area__button_orders" href="#">Мои заказы</a>
+          <a class="personal-area__button personal-area__button_cabinet" href="#">Личный кабинет</a>
+        </div>
       </div>
     </div>
     <nav class="page-header__navigation container">
@@ -96,12 +145,12 @@
                 </div>
                 <div class="price-controls">
                   <label aria-label="min-price">
-                  <input type="number" name="min" id="min-price" value="0" min="0" max="30000">
-                </label>
+                    <input type="number" name="min" id="min-price" value="0" min="0" max="30000">
+                  </label>
                   <span>-</span>
                   <label aria-label="max-price">
-                  <input type="number" name="max" id="max-price" value="30000" min="0" max="30000">
-                </label>
+                    <input type="number" name="max" id="max-price" value="30000" min="0" max="30000">
+                  </label>
                 </div>
               </div>
             </fieldset>
@@ -365,12 +414,14 @@
   </footer>
   <!-- Модальное окно (сообщение о добавлении товара в корзину) -->
   <div class="modal">
-    <p>Заказ добавлен в корзину!</p>
-    <button aria-label="Закрыть модальное окно">×</button>
-    <ul class="list-reset">
-      <li><a href="#">Оформить заказ</a></li>
-      <li><a href="#">Продолжить покупки</a></li>
-    </ul>
+    <div class="modal__content">
+      <p>Заказ добавлен в корзину!</p>
+      <button aria-label="Закрыть модальное окно">×</button>
+    </div>
+    <div class="modal__footer">
+      <a class="button" href="#">Оформить заказ</a>
+      <a class="button button_light" href="#">Продолжить покупки</a>
+    </div>
   </div>
 </body>
 
