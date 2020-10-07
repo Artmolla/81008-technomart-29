@@ -40,6 +40,7 @@
 	--hover-green: #5FBB2D;
 	--hover-red: #CA2C37;
 	--hover-light-blue: #293449;
+	--hover-product-shadow: rgba(0,0,0, 0.15);
 	/* click colors */
 	--click-green: #518534;
 	--click-red: #BA2732;
@@ -662,12 +663,23 @@
 	border: 3px solid var(--basic-green);
 	color: var(--basic-light-blue);
   }
-  
+  .goods__action_bookmarks-button:hover {
+	  border-color: var(--basic-light-blue);
+  }
+  .goods__action_bookmarks-button:active {
+	opacity: .5;
+}
   .goods__action-item_buy-button {
 	background-color: var(--basic-green);
 	box-shadow: inset 0px -3px 0px #367315;
   }
-  
+  .goods__action-item_buy-button:hover {
+	  background-color: var(--hover-green);
+  }
+
+  .goods__action-item_buy-button:active {
+	background-color: var(--click-green);
+}
   .goods__name {
 	margin: 0;
 	margin-bottom: 10px;
@@ -716,7 +728,9 @@
 	text-transform: uppercase;
 	margin-bottom: 12px;
   }
-  
+  .goods__item:hover {
+	box-shadow: 0 4px 20px var(--hover-product-shadow);
+}
   .goods__item:hover .goods__action-list {
 	display: flex;
   }
@@ -1104,6 +1118,7 @@
 	list-style: none;
 	padding: 0;
 	opacity: .3;
+	border-bottom: 1px dotted var(--hover-red);
   }
   
   .filters {
@@ -1349,11 +1364,6 @@
 	background-color: var(--hover-red);
   }
   
-  .sorting-menu__button:hover {
-	opacity: 1;
-	border-bottom: 1px dotted var(--hover-red);
-  }
-  
   
   /* click */
   
@@ -1404,7 +1414,14 @@
 	color: var(--click-red);
 	border: none;
   }
-  
+
+  .sorting-menu__button:active svg {
+	fill: red;
+  }
+  .sorting-menu__button:hover {
+	opacity: 1;
+	border-bottom: 1px solid var(--hover-red);
+  }
   .bredcrumbs__item a:active {
 	border: 1px solid var(--click-red);
   }
@@ -1454,11 +1471,10 @@
 	background-repeat: no-repeat;
 	opacity: 1;
   }
-  
+  /* модальные окна */
+
   .modal {
 	display: none;
-	outline: 5px solid tomato;
-	outline-offset: -5px;
 	background-color: var(--basic-white);
 	width: 620px;
 	margin: 0;
@@ -1470,6 +1486,8 @@
   
   .modal__content {
 	padding: 37px 80px;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	border-top: 7px solid var(--basic-red);
   }
   
   .modal__footer {
@@ -1483,10 +1501,17 @@
   .modal .button {
 	flex-grow: 1;
 	flex-shrink: 1;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
   
   .button_light {
 	background-color: var(--basic-white);
 	color: var(--basic-black);
 	margin-left: 10px;
+  }
+
+  .button-close {
+	  position: absolute;
+	  top: 21px;
+	  right: 11px;
   }
