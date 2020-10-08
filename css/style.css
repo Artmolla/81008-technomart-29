@@ -68,7 +68,7 @@
 body {
 	padding: 0;
 	margin: 0;
-	font-family: 'Cuprum', sans-serif;
+	font-family: 'Cuprum', 'Tahoma', sans-serif;
 	font-size: 18px;
 	line-height: 24px;
 	color: var(--basic-black);
@@ -611,7 +611,7 @@ a {
 	grid-template-columns: repeat(3, auto);
 	grid-gap: 20px;
 	gap: 20px;
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'PT Sans', 'Tahoma', sans-serif;
 	font-size: 18px;
 	line-height: 20px;
 	font-weight: bold;
@@ -710,7 +710,7 @@ a {
 
 .goods__price {
 	position: relative;
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'PT Sans', 'Tahoma', sans-serif;
 	font-size: 17px;
 	line-height: 38px;
 	width: 123px;
@@ -739,7 +739,7 @@ a {
 }
 
 .goods__discount-price {
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'PT Sans', 'Tahoma', sans-serif;
 	font-size: 17px;
 	line-height: 18px;
 	min-height: 18px;
@@ -810,7 +810,7 @@ a {
 }
 
 .services__text {
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'PT Sans', 'Tahoma', sans-serif;
 	font-size: 13px;
 	line-height: 24px;
 	font-weight: normal;
@@ -903,7 +903,7 @@ a {
 
 .about-us__text,
 .contact-info__text {
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'PT Sans', 'Tahoma', sans-serif;
 	font-size: 13px;
 	line-height: 24px;
 	font-weight: normal;
@@ -948,6 +948,16 @@ a {
 .page-footer {
 	color: var(--basic-white);
 	background-color: var(--basic-light-blue);
+}
+
+.page-footer__logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 220px;
+	min-height: 48px;
+	background-color: #ee3643;
+	box-shadow: 0px 5px 0px 0px rgba(181, 41, 51, 1);
 }
 
 .page-footer__top {
@@ -1051,7 +1061,7 @@ a {
 .bredcrumbs,
 .pagination {
 	display: flex;
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'PT Sans', 'Tahoma', sans-serif;
 	font-size: 13px;
 	line-height: 18px;
 	font-weight: normal;
@@ -1125,7 +1135,7 @@ a {
 .sorting-menu {
 	display: flex;
 	flex-wrap: wrap;
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'PT Sans', 'Tahoma', sans-serif;
 	font-style: normal;
 	font-size: 13px;
 	line-height: 18px;
@@ -1162,9 +1172,9 @@ a {
 	border-bottom: 1px dotted var(--hover-red);
 }
 
-.filters {
+.filter {
 	grid-row: 1 / 3;
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'PT Sans', 'Tahoma', sans-serif;
 	font-style: normal;
 	font-size: 15px;
 	line-height: 19px;
@@ -1172,7 +1182,7 @@ a {
 	color: var(--basic-black);
 }
 
-.filters__heading {
+.filter__heading {
 	font-size: 13px;
 	line-height: 18px;
 	background-color: var(--special-lace);
@@ -1180,7 +1190,7 @@ a {
 	margin-top: 0;
 }
 
-.filters__item {
+.filter__item {
 	margin: 0;
 	padding: 0;
 	border: none;
@@ -1188,15 +1198,15 @@ a {
 	margin-bottom: 12px;
 }
 
-.filters__item_manufacturers {
+.filter__item_manufacturers {
 	padding-bottom: 15px;
 }
 
-.filters__item_food {
+.filter__item_food {
 	margin-bottom: 15px;
 }
 
-.filters__item label {
+.filter__item label {
 	display: block;
 	padding-left: 35px;
 	position: relative;
@@ -1216,10 +1226,6 @@ a {
 	background-repeat: no-repeat;
 }
 
-.filter__item-checkbox:checked+label::before {
-	display: none;
-}
-
 .filter__item-checkbox:checked+label::after {
 	position: absolute;
 	width: 27px;
@@ -1231,7 +1237,7 @@ a {
 	background-repeat: no-repeat;
 }
 
-.filters__item-radio+label::before {
+.filter__item-radio+label::before {
 	width: 27px;
 	height: 27px;
 	position: absolute;
@@ -1242,11 +1248,22 @@ a {
 	background-repeat: no-repeat;
 }
 
-.filters__show-btn {
+.filter__item-radio:checked+label::after {
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	top: -5px;
+	left: 0;
+	content: '';
+	background: url('../img/icons/icon-radio-on.svg');
+	background-repeat: no-repeat;
+}
+
+.filter__show-btn {
 	width: 100%;
 	padding: 10px 0;
 	text-transform: uppercase;
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'PT Sans', 'Tahoma', sans-serif;
 	font-size: 13px;
 	line-height: 18px;
 }
@@ -1320,21 +1337,21 @@ a {
 	padding: 0;
 }
 
-.filters__name {
+.filter__name {
 	font-size: 17px;
 	line-height: 30px;
 	font-weight: bold;
 }
 
-.filters__name_manufacturers {
+.filter__name_manufacturers {
 	margin-bottom: 18px;
 }
 
-.filters__name_food {
+.filter__name_food {
 	margin-bottom: 26px;
 }
 
-.filters__show-btn {
+.filter__show-btn {
 	border: 1px solid var(--special-light-grey);
 }
 
@@ -1357,7 +1374,7 @@ a {
 }
 
 .about-perforators__text {
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'PT Sans', 'Tahoma', sans-serif;
 	font-size: 13px;
 	line-height: 24px;
 	font-weight: normal;
@@ -1568,14 +1585,14 @@ a {
 /* модальные окна */
 
 .modal {
-	display: none;
+	/* display: none; */
 	background-color: var(--basic-white);
 	width: 620px;
 	margin: 0;
-	position: absolute;
+	position: fixed;
 	z-index: 10;
-	top: 50%;
-	left: 50%;
+	top: 50vh;
+	left: 50vw;
 	transform: translate(-50%, -50%);
 }
 

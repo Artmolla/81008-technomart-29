@@ -13,7 +13,7 @@
   <header class="page-header">
     <div class="page-header__top">
       <div class="page-header__functional-area container">
-        <a class="page-header__logo">
+        <a href="index.html" class="page-header__logo">
           <svg width="108" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M103.847 2.659v14.79h-2.113V2.66h-3.756V1.015h9.626V2.66h-3.757zm-8.135 8.698a3.02 3.02 0 01-1.385.986c-.556.196-1.217.294-1.984.294a12 12 0 01-1.22-.07c-.455-.048-.83-.102-1.128-.165v5.048h-2.113V1.25a11.069 11.069 0 011.796-.364c.603-.07 1.256-.106 1.96-.106.94 0 1.738.098 2.396.294.657.195 1.19.52 1.596.974.407.454.704 1.057.892 1.808.188.751.282 1.683.282 2.794 0 1.142-.09 2.097-.27 2.864-.18.767-.454 1.382-.822 1.843zm-1.197-6.82c-.118-.564-.301-1.01-.552-1.338a1.995 1.995 0 00-.95-.693c-.384-.133-.842-.2-1.374-.2h-1.644v8.687h1.644c.532 0 .99-.066 1.373-.2.384-.132.7-.363.951-.692.25-.329.434-.775.552-1.338.117-.564.176-1.268.176-2.113s-.059-1.55-.176-2.113zM82.6 13.224h-4.696l-1.056 4.226h-2.114l3.992-16.435h3.052l3.991 16.435h-2.113L82.6 13.224zm-2.301-9.861h-.094l-1.949 8.217h3.992l-1.95-8.217zM70.156 5.24h-.117l-3.405 10.096h-2.113L61.117 5.24H61l-.705 12.209h-2.113l.94-16.435h2.582l3.827 11.27h.094l3.827-11.27h2.582l.94 16.435H70.86L70.157 5.24zM54.38 15.924c-.438.642-.967 1.095-1.585 1.361-.618.267-1.326.4-2.125.4-.798 0-1.506-.133-2.125-.4-.618-.266-1.146-.72-1.584-1.361-.439-.642-.771-1.507-.998-2.595-.227-1.087-.34-2.453-.34-4.097 0-1.643.113-3.009.34-4.097.227-1.087.56-1.952.998-2.594.438-.642.966-1.096 1.584-1.362C49.163.913 49.871.78 50.67.78c.799 0 1.507.133 2.125.4.618.265 1.147.72 1.585 1.361.438.642.77 1.507.998 2.594.227 1.088.34 2.454.34 4.097 0 1.644-.113 3.01-.34 4.097-.227 1.088-.56 1.953-.998 2.595zM53.358 5.758c-.165-.908-.38-1.628-.646-2.16-.266-.533-.58-.9-.94-1.104a2.218 2.218 0 00-1.103-.305c-.375 0-.743.102-1.103.305-.36.204-.673.571-.94 1.104-.265.532-.48 1.252-.645 2.16-.164.907-.247 2.066-.247 3.474 0 1.41.083 2.567.247 3.475.164.908.38 1.628.646 2.16.266.532.579.9.939 1.104.36.203.728.305 1.103.305.376 0 .744-.102 1.104-.305.36-.204.673-.572.939-1.104.266-.532.481-1.252.645-2.16.165-.908.247-2.066.247-3.475 0-1.408-.082-2.567-.246-3.474zM40.69 9.937h-4.93v7.513h-2.114V1.015h2.114v7.278h4.93V1.015h2.113V17.45h-2.113V9.937zM29.54 17.45l-2.935-7.044-2.935 7.044h-2.113l3.522-8.452-3.17-7.983h2.113l2.583 6.574 2.582-6.574H31.3l-3.17 7.983 3.523 8.452H29.54zM12.283 1.015h7.983V2.66h-5.87v5.4h5.165v1.643h-5.165v6.104h5.87v1.644h-7.983V1.015zM6.648 17.45H4.535V2.659H.78V1.015h9.626V2.66H6.648v14.79z"
@@ -23,7 +23,7 @@
         <form class="search-form" id="search-form" action="#" method="get">
 
           <input type="search" name="site-search" id="site-search-field" class="site-search" placeholder="Поиск:">
-          <svg class="search-form__icon" class="" width="17" height="17" viewBox="0 0 17 17" fill="none"
+          <svg class="search-form__icon" width="17" height="17" viewBox="0 0 17 17" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <g opacity="0.3">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -132,11 +132,11 @@
       <h2 class="catalog-content__heading">Перфораторы</h2>
       <div class="store">
         <!-- фильтр -->
-        <section class="store__filters filters">
-          <h2 class="filters__heading">Фильтр:</h2>
-          <form id="filters__form" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="filters__item">
-              <legend class="filters__name">Цена</legend>
+        <section class="store__filter filter">
+          <h2 class="filter__heading">Фильтр:</h2>
+          <form id="filter__form" action="https://echo.htmlacademy.ru/" method="get">
+            <fieldset class="filter__item">
+              <legend class="filter__name">Цена</legend>
               <div class="range-filter">
                 <div class="range-controls">
                   <div class="scale">
@@ -156,8 +156,8 @@
                 </div>
               </div>
             </fieldset>
-            <fieldset class="filters__item filters__item_manufacturers">
-              <legend class="filters__name filters__name_manufacturers">Производители:</legend>
+            <fieldset class="filter__item filter__item_manufacturers">
+              <legend class="filter__name filter__name_manufacturers">Производители:</legend>
               <input class="visually-hidden filter__item-checkbox" type="checkbox" name="manufacturer" id="bosh"
                 value="Bosh" checked />
               <label for="bosh">Bosh</label>
@@ -174,16 +174,16 @@
                 value="Hitachi" />
               <label for="hitachi">Hitachi</label>
             </fieldset>
-            <fieldset class="filters__item filters__item_food">
-              <legend class="filters__name filters__name_food">Питание:</legend>
-              <input class="visually-hidden filters__item-radio" type="radio" name="power-type" id="accumulative"
+            <fieldset class="filter__item filter__item_food">
+              <legend class="filter__name filter__name_food">Питание:</legend>
+              <input class="visually-hidden filter__item-radio" type="radio" name="power-type" id="accumulative"
                 value="Аккумуляторные" checked />
               <label for="accumulative">Аккумуляторные</label>
-              <input class="visually-hidden filters__item-radio" type="radio" name="power-type" id="network"
+              <input class="visually-hidden filter__item-radio" type="radio" name="power-type" id="network"
                 value="Сетевые" />
               <label for="network">Сетевые</label>
             </fieldset>
-            <button class="filters__show-btn" type="submit">Показать</button>
+            <button class="filter__show-btn" type="submit">Показать</button>
           </form>
         </section>
         <!-- сортировка -->
@@ -451,9 +451,10 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__top container">
-      <a>
-        <img src="img/corporate-logo-footer.svg"
-          alt="Интернет-магазин строительных материалов и инструментов для ремонта" width="220" height="68">
+      <a class="page-footer__logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="138" height="23" fill="none">
+          <path fill="#fff" fill-rule="evenodd" d="M132.694 3.39695V22.297h-2.7V3.39695h-4.8v-2.1h12.3v2.1h-4.8zM122.299 14.5119c-.47.59-1.06 1.01-1.77 1.26s-1.555.375-2.535.375c-.46 0-.98-.03-1.56-.09-.58-.06-1.06-.13-1.44-.21v6.45h-2.7V1.59695c.76-.22 1.525-.375 2.295-.465.77-.09 1.605-.135002 2.505-.135002 1.2 0 2.22.125002 3.06.375002.84.25 1.52.665 2.04 1.245.52.58.9 1.35 1.14 2.31.24.96.36 2.15.36 3.57 0 1.46-.115 2.67995-.345 3.65995-.23.98-.58 1.765-1.05 2.355zm-1.53-8.71496c-.15-.72-.385-1.29-.705-1.71-.32-.42-.725-.715-1.215-.885-.49-.17-1.075-.255-1.755-.255h-2.1V14.0469h2.1c.68 0 1.265-.085 1.755-.255.49-.17.895-.465 1.215-.885.32-.42.555-.99.705-1.71.15-.72.225-1.61996.225-2.69996 0-1.08-.075-1.98-.225-2.7zM105.544 16.897h-6l-1.35 5.4h-2.7l5.1-21.00005h3.9l5.1 21.00005h-2.7l-1.35-5.4zm-2.94-12.60006h-.12l-2.49 10.49996h5.1l-2.49-10.49996zm-12.96 2.40001h-.15L85.144 19.597h-2.7l-4.35-12.90005h-.15l-.9 15.60005h-2.7l1.2-21.00005h3.3l4.89 14.40005h.12l4.89-14.40005h3.3l1.2 21.00005h-2.7l-.9-15.60005zM69.484 20.3469c-.56.82-1.235 1.4-2.025 1.74-.79.34-1.695.51-2.715.51-1.02 0-1.925-.17-2.715-.51-.79-.34-1.465-.92-2.025-1.74-.56-.82-.985-1.925-1.275-3.315-.29-1.39-.435-3.135-.435-5.235 0-2.09995.145-3.84495.435-5.23495.29-1.39.715-2.495 1.275-3.315.56-.82 1.235-1.4 2.025-1.74.79-.34 1.695-.510002 2.715-.510002 1.02 0 1.925.170002 2.715.510002.79.34 1.465.92 2.025 1.74.56.82.985 1.925 1.275 3.315.29 1.39.435 3.135.435 5.23495 0 2.1-.145 3.845-.435 5.235-.29 1.39-.715 2.495-1.275 3.315zM68.179 7.35695c-.21-1.16-.485-2.08-.825-2.76-.34-.68-.74-1.15-1.2-1.41-.46-.26-.93-.39-1.41-.39-.48 0-.95.13-1.41.39-.46.26-.86.73-1.2 1.41-.34.68-.615 1.6-.825 2.76-.21 1.16-.315 2.64-.315 4.43995 0 1.8.105 3.28.315 4.44.21 1.16.485 2.08.825 2.76.34.68.74 1.15 1.2 1.41.46.26.93.39 1.41.39.48 0 .95-.13 1.41-.39.46-.26.86-.73 1.2-1.41.34-.68.615-1.6.825-2.76.21-1.16.315-2.64.315-4.44 0-1.79995-.105-3.27995-.315-4.43995zM51.994 12.697h-6.3v9.6h-2.7V1.29695h2.7V10.597h6.3V1.29695h2.7V22.297h-2.7v-9.6zm-14.249 9.6l-3.75-9-3.75 9h-2.7l4.5-10.8-4.05-10.20005h2.7l3.3 8.4 3.3-8.4h2.7L35.945 11.497l4.5 10.8h-2.7zM15.695 1.29695h10.2v2.1h-7.5V10.297h6.6v2.1h-6.6v7.8h7.5v2.1h-10.2V1.29695zM8.495 22.297h-2.7V3.39695H.994999v-2.1H13.295v2.1h-4.8V22.297z" clip-rule="evenodd"/>
+        </svg>
       </a>
       <address class="page-footer__contact-info">
         г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
