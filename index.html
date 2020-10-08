@@ -21,6 +21,7 @@
           </svg>
         </a>
         <form class="search-form" id="search-form" action="#" method="get">
+          <input type="search" name="site-search" id="site-search-field" class="site-search" placeholder="Поиск:">
           <svg class="search-form__icon" class="" width="17" height="17" viewBox="0 0 17 17" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <g opacity="0.3">
@@ -29,39 +30,41 @@
                 fill="white" />
             </g>
           </svg>
-          <input type="search" name="site-search" id="site-search-field" class="site-search" placeholder="Поиск:">
           <label class="site-search__label" for="site-search-field">Поиск по содержимому сайта</label>
           <button class="visually-hidden" aria-label="Поиск по содержанию сайта"></button>
         </form>
         <ul class="page-header__functional-menu list-reset">
           <li class="page-header__functional-menu-item">
-            <svg class="bookmarks-icon" width="14" height="16" viewBox="0 0 14 16" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <g opacity="0.3">
-                <path
-                  d="M14 15C14 15.55 13.632 15.741 13.182 15.426L7.819 11.661C7.369 11.346 6.632 11.346 6.182 11.661L0.818 15.426C0.368 15.741 0 15.55 0 15V1C0 0.45 0.45 0 1 0H13C13.55 0 14 0.45 14 1V15Z"
-                  fill="white" />
-              </g>
-            </svg>
+
             <a href="#"
               class="page-header__functional-menu-button page-header__functional-menu-button_bookmarks">Закладки:
-              <span>0</span></a>
+              <span>0</span>
+              <svg class="bookmarks-icon" width="14" height="16" viewBox="0 0 14 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.3">
+                  <path
+                    d="M14 15C14 15.55 13.632 15.741 13.182 15.426L7.819 11.661C7.369 11.346 6.632 11.346 6.182 11.661L0.818 15.426C0.368 15.741 0 15.55 0 15V1C0 0.45 0.45 0 1 0H13C13.55 0 14 0.45 14 1V15Z"
+                    fill="white" />
+                </g>
+              </svg>
+            </a>
           </li>
           <li class="page-header__functional-menu-item">
-            <svg class="card-icon" width="15" height="15" viewBox="0 0 15 15" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <g opacity="0.3">
-                <path
-                  d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"
-                  fill="white" />
-                <path
-                  d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"
-                  fill="white" />
-                <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white" />
-              </g>
-            </svg>
             <a href="#" class="page-header__functional-menu-button page-header__functional-menu-button_basket">Корзина:
-              <span>0</span></a>
+              <span>0</span>
+              <svg class="card-icon" width="15" height="15" viewBox="0 0 15 15" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.3">
+                  <path
+                    d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"
+                    fill="white" />
+                  <path
+                    d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"
+                    fill="white" />
+                  <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white" />
+                </g>
+              </svg>
+            </a>
           </li>
           <li class="page-header__functional-menu-item">
             <a href="#"
@@ -78,13 +81,14 @@
         Б.Конюшенная, д. 19/8</address>
       <div class="personal-area">
         <div class="button-container">
-          <svg class="login-icon" width="20" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M14.167 8.5L5.714 0v6H0v5h5.714v6l8.453-8.5z" fill="#C5C5C5" />
-            <path
-              d="M16.177 15.01H11.39V17h4.787c2.074 0 2.861-1.81 2.885-3.026V3.028C19.038 1.811 18.252 0 16.177 0H11.39v1.99h4.787c.8 0 .945.681.962 1.057v10.904c-.016.376-.163 1.059-.962 1.059z"
-              fill="#C5C5C5" />
-          </svg>
-          <a class="personal-area__button personal-area__button_login" href="#">Войти</a>
+
+          <a class="personal-area__button personal-area__button_login" href="#">Войти<svg class="login-icon" width="20"
+              height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.167 8.5L5.714 0v6H0v5h5.714v6l8.453-8.5z" fill="#C5C5C5" />
+              <path
+                d="M16.177 15.01H11.39V17h4.787c2.074 0 2.861-1.81 2.885-3.026V3.028C19.038 1.811 18.252 0 16.177 0H11.39v1.99h4.787c.8 0 .945.681.962 1.057v10.904c-.016.376-.163 1.059-.962 1.059z"
+                fill="#C5C5C5" />
+            </svg></a>
         </div>
         <div class="button-container">
           <a class="personal-area__button personal-area__button_registration" href="#">Регистрация</a>
@@ -187,7 +191,18 @@
         <li class="goods__item">
           <div class="goods__image-container">
             <ul class="goods__action-list list-reset ">
-              <li class="goods__action-item goods__action-item_buy-button"><a href="#">Купить</a></li>
+              <li class="goods__action-item goods__action-item_buy-button"><a href="#"><svg class="action-card-icon" width="15"
+                    height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.3">
+                      <path
+                        d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"
+                        fill="white" />
+                      <path
+                        d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"
+                        fill="white" />
+                      <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white" />
+                    </g>
+                  </svg>Купить</a></li>
               <li class="goods__action-item goods__action_bookmarks-button"><a href="#">В закладки</a></li>
             </ul>
             <img class="goods__image" src="img/products/perforator-bosh-bfg-9000.png" alt="Перфоратор Bosh" width="184"
@@ -201,7 +216,18 @@
         <li class="goods__item new-product">
           <div class="goods__image-container">
             <ul class="goods__action-list list-reset ">
-              <li class="goods__action-item goods__action-item_buy-button"><a href="#">Купить</a></li>
+                           <li class="goods__action-item goods__action-item_buy-button"><a href="#"><svg class="action-card-icon" width="15"
+                    height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.3">
+                      <path
+                        d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"
+                        fill="white" />
+                      <path
+                        d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"
+                        fill="white" />
+                      <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white" />
+                    </g>
+                  </svg>Купить</a></li>
               <li class="goods__action-item goods__action_bookmarks-button"><a href="#">В закладки</a></li>
             </ul>
             <img class="goods__image" src="img/products/perforator-bosh-bfg-3000.png" alt="Перфоратор Bosh" width="127"
@@ -215,7 +241,18 @@
         <li class="goods__item">
           <div class="goods__image-container">
             <ul class="goods__action-list list-reset ">
-              <li class="goods__action-item goods__action-item_buy-button"><a href="#">Купить</a></li>
+                           <li class="goods__action-item goods__action-item_buy-button"><a href="#"><svg class="action-card-icon" width="15"
+                    height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.3">
+                      <path
+                        d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"
+                        fill="white" />
+                      <path
+                        d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"
+                        fill="white" />
+                      <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white" />
+                    </g>
+                  </svg>Купить</a></li>
               <li class="goods__action-item goods__action_bookmarks-button"><a href="#">В закладки</a></li>
             </ul>
             <img class="goods__image" src="img/products/perforator-bosh-bfg-6000.png" alt="Перфоратор Bosh" width="144"
@@ -229,7 +266,18 @@
         <li class="goods__item new-product">
           <div class="goods__image-container">
             <ul class="goods__action-list list-reset ">
-              <li class="goods__action-item goods__action-item_buy-button"><a href="#">Купить</a></li>
+                           <li class="goods__action-item goods__action-item_buy-button"><a href="#"><svg class="action-card-icon" width="15"
+                    height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.3">
+                      <path
+                        d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"
+                        fill="white" />
+                      <path
+                        d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"
+                        fill="white" />
+                      <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white" />
+                    </g>
+                  </svg>Купить</a></li>
               <li class="goods__action-item goods__action_bookmarks-button"><a href="#">В закладки</a></li>
             </ul>
             <img class="goods__image" src="img/products/perforator-bosh-bfg-2000.png" alt="Перфоратор Bosh" width="127"
@@ -424,15 +472,21 @@
   <div class="modal">
     <form class="modal__form" action="" method="">
       <div class="modal__content">
-        <button aria-label="Закрыть модальное окно">×</button>
-        <label for="modal-name">Ваше имя</label>
-        <input type="text" name="name" id="modal-name" placeholder="Имя Фамилия">
-        <label for="modal-mail">Ваш e-mail</label>
-        <input type="mail" name="email" placeholder="emal@example.com">
-        <label for="modal-text">Текст письма</label>
-        <textarea name="message" id="modal-text" cols="30" rows="10">
+        <button class="modal__close" aria-label="Закрыть модальное окно">×</button>
+        <div class="modal__name">
+          <label for="modal-name">Ваше имя</label>
+          <input type="text" name="name" id="modal-name" placeholder="Имя Фамилия">
+        </div>
+        <div class="modal__email">
+          <label for="modal-mail">Ваш e-mail</label>
+          <input type="mail" name="email" placeholder="emal@example.com">
+        </div>
+        <div class="modal__text">
+          <label for="modal-text">Текст письма</label>
+          <textarea name="message" id="modal-text" cols="30" rows="10">
           В свободной форме
         </textarea>
+        </div>
       </div>
       <div class="modal__footer">
         <button class="button" type="submit">Отправить</button>
