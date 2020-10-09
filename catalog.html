@@ -149,7 +149,7 @@
                   <label aria-label="min-price">
                     <input type="number" name="min" id="min-price" value="0" min="0" max="30000">
                   </label>
-                  <span>-</span>
+                  <span>—</span>
                   <label aria-label="max-price">
                     <input type="number" name="max" id="max-price" value="30000" min="0" max="30000">
                   </label>
@@ -193,7 +193,7 @@
             <li class="sorting-menu__list-item active"><a class="sorting-menu__button">По цене</a></li>
             <li class="sorting-menu__list-item"><a class="sorting-menu__button" href="#">По типу</a></li>
             <li class="sorting-menu__list-item"><a class="sorting-menu__button" href="#">По функционалу</a></li>
-            <li class="sorting-menu__list-item"><a class="sorting-menu__button active">
+            <li class="sorting-menu__list-item sorting-menu__list-item_buttons"><a class="sorting-menu__button active">
                 <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M5.5 0L11 10H0" fill="#C5C5C5" />
                 </svg>
@@ -517,8 +517,18 @@
   <!-- Модальное окно (сообщение о добавлении товара в корзину) -->
   <div class="modal">
     <div class="modal__content">
-      <p>Заказ добавлен в корзину!</p>
-      <button class="modal__close" aria-label="Закрыть модальное окно">×</button>
+      <button class="modal__close" aria-label="Закрыть модальное окно">
+        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="none">
+          <path fill="#EE3643" d="M13.273 10.5001l7.422-7.42204c.389-.389.389-1.025 0-1.414L19.336.305056c-.389-.3890003-1.025-.3890003-1.414 0L10.5 7.72706 3.07799.305056c-.389-.3890003-1.025-.3890003-1.414 0L.304995 1.66406c-.3890004.389-.3890004 1.025 0 1.414L7.72699 10.5001l-7.420995 7.422c-.3890004.389-.3890004 1.025 0 1.414l1.358995 1.359c.389.389 1.025.389 1.414 0l7.42201-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414l-7.423-7.422z"/>
+        </svg>
+      </button>
+      <div class="modal__success">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="none">
+          <path fill="#fff" d="M35.641 1.06596c-.3912-.38873-1.0228-.38873-1.414 0L15.788 19.504c-.3912.3887-1.0228.3887-1.414 0l-8.13998-8.139c-.39118-.3888-1.02282-.3888-1.414 0l-3.535 3.535c-.388734.3911-.388734 1.0228 0 1.414L14.374 29.404c.3912.3887 1.0228.3887 1.414 0l3.536-3.536 1.414-1.414L39.176 6.01596c.3888-.39118.3888-1.02281 0-1.414l-3.535-3.536z"/>
+        </svg>
+      </div>
+      <p class="modal__success-message">Заказ добавлен в корзину!</p>
+
     </div>
     <div class="modal__footer">
       <a class="button" href="#">Оформить заказ</a>

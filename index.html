@@ -473,7 +473,11 @@
   <div class="modal">
     <form class="modal__form" action="#" method="GET">
       <div class="modal__content">
-        <button class="modal__close" aria-label="Закрыть модальное окно">×</button>
+        <button class="modal__close" aria-label="Закрыть модальное окно">
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="none">
+            <path fill="#EE3643" d="M13.273 10.5001l7.422-7.42204c.389-.389.389-1.025 0-1.414L19.336.305056c-.389-.3890003-1.025-.3890003-1.414 0L10.5 7.72706 3.07799.305056c-.389-.3890003-1.025-.3890003-1.414 0L.304995 1.66406c-.3890004.389-.3890004 1.025 0 1.414L7.72699 10.5001l-7.420995 7.422c-.3890004.389-.3890004 1.025 0 1.414l1.358995 1.359c.389.389 1.025.389 1.414 0l7.42201-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414l-7.423-7.422z"/>
+          </svg>
+        </button>
         <div class="modal__name">
           <label for="modal-name">Ваше имя</label>
           <input type="text" name="name" id="modal-name" placeholder="Имя Фамилия">
@@ -484,9 +488,7 @@
         </div>
         <div class="modal__text">
           <label for="modal-text">Текст письма</label>
-          <textarea name="message" id="modal-text" cols="30" rows="10">
-          В свободной форме
-        </textarea>
+          <textarea name="message" id="modal-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
         </div>
       </div>
       <div class="modal__footer">
