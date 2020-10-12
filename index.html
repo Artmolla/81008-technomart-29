@@ -141,14 +141,14 @@
         <li class="promo-section__services-item promo-section__services-item_slides">
           <!-- слайдер -->
           <ul class="promo-section__slider list-reset">
-            <li class="promo-section__slider-item">
+            <li class="promo-section__slider-item active">
               <h3 class="promo-section__slider-heading">Перфораторы</h3>
               <p class="promo-section__slider-text">Настоящие мужские игрушки</p>
               <img class="promo-section__slider-img" src="img/slider/slider-perforators.jpg" alt="Перфоратор Bosh"
                 width="620" height="266">
               <a class="promo-section__slider-button button" href="#">Открыть каталог</a>
             </li>
-            <li class="promo-section__slider-item active">
+            <li class="promo-section__slider-item">
               <h3 class="promo-section__slider-heading">Дрели</h3>
               <p class="promo-section__slider-text">Соседям на радость!</p>
               <img class="promo-section__slider-img" src="img/slider/slider-drills.jpg" alt="Дрель Bosh" width="620" height="266">
@@ -176,8 +176,8 @@
           </ul>
           <!-- навигация по слайдеру -->
           <ul class="promo-section__slider-bredcrumbs list-reset">
-            <li class="promo-section__slider-bredcrumbs__item"></li>
-            <li class="promo-section__slider-bredcrumbs__item active"></li>
+            <!-- <li class="promo-section__slider-bredcrumbs__item"></li>
+            <li class="promo-section__slider-bredcrumbs__item active"></li> -->
           </ul>
         </li>
       </ul>
@@ -344,7 +344,7 @@
         <p class="services__text">Хороший интернет-магазин отличается от плохого не только ценами!</p>
         <p class="services__text">Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         <ul class="services__navigation-list list-reset">
-          <li class="services__navigation-list-item"><a class="services__navigation-list-button" href="#">Доставка</a>
+          <li class="services__navigation-list-item active"><a class="services__navigation-list-button" href="#">Доставка</a>
           </li>
           <li class="services__navigation-list-item"><a class="services__navigation-list-button" href="#">Гарантия</a>
           </li>
@@ -352,14 +352,14 @@
           </li>
         </ul>
         <ul class="services__list list-reset">
-          <li class="services__list-item">
+          <li class="services__list-item services__list-item_delivery active">
             <h3 class="services__list-item-heading">Доставка</h3>
             <p class="services__text">Мы с удовольствием доставим ваш товар прямо<br>
               к вашему подъезду совершенно бесплатно!<br>
               Ведь мы неплохо заработаем,<br>
               поднимая его на ваш этаж!</p>
           </li>
-          <!-- <li class="services__list-item">
+          <li class="services__list-item services__list-item_guarante">
             <h3 class="services__list-item-heading">Гарантия</h3>
             <p class="services__text">
               Если купленный у нас товар поломается или заискрит,<br>
@@ -368,15 +368,15 @@
               гарантии. Мы обменяем сгоревший товар на новый.<br>
               Дом уж восстановите как-нибудь сами.
             </p>
-          </li> -->
-          <!-- <li class="services__list-item">
+          </li>
+          <li class="services__list-item services__list-item_credit">
             <h3 class="services__list-item-heading">Кредит</h3>
             <p class="services__text">
               Залезть в долговую яму стало проще!<br>
               Кредитные консультанты придут вам на помощь.
             </p>
-            <a href="#" class="button">Отправить заявку</a>
-          </li> -->
+            <a href="#" class="button button_credit">Отправить заявку</a>
+          </li>
         </ul>
       </div>
     </section>
@@ -474,7 +474,7 @@
     <form class="modal__form" action="#" method="GET">
       <div class="modal__content">
         <button class="modal__close" aria-label="Закрыть модальное окно">
-          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"fill="none">
             <path fill="#EE3643" d="M13.273 10.5001l7.422-7.42204c.389-.389.389-1.025 0-1.414L19.336.305056c-.389-.3890003-1.025-.3890003-1.414 0L10.5 7.72706 3.07799.305056c-.389-.3890003-1.025-.3890003-1.414 0L.304995 1.66406c-.3890004.389-.3890004 1.025 0 1.414L7.72699 10.5001l-7.420995 7.422c-.3890004.389-.3890004 1.025 0 1.414l1.358995 1.359c.389.389 1.025.389 1.414 0l7.42201-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414l-7.423-7.422z"/>
           </svg>
         </button>
@@ -497,6 +497,8 @@
     </form>
   </div>
   <script src="js/script.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/service-slider.js"></script>
 </body>
 
 </html>

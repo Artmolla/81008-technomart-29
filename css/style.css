@@ -504,10 +504,12 @@ a {
 .promo-section__slider {
 	background-color: var(--basic-light-grey);
 }
-
-.promo-section__slider-item {
+.active.promo-section__slider-item {
 	display: grid;
 	grid-template-rows: min-content 1fr min-content;
+}
+.promo-section__slider-item {
+	display: none;
 }
 
 .promo-section__slider-prv-btn,
@@ -516,6 +518,7 @@ a {
 	background: none;
 	border: none;
 	outline: none;
+	cursor: pointer;
 }
 
 .promo-section__slider-heading {
@@ -570,6 +573,7 @@ a {
 }
 
 .promo-section__slider-bredcrumbs__item {
+	cursor: pointer;
 	width: 10px;
 	height: 10px;
 	border: 2px solid var(--basic-white);
@@ -799,8 +803,8 @@ a {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	padding-top: 35px;
-	padding-bottom: 99px;
-	margin-bottom: 46px;
+	padding-bottom: 10px;
+	margin-bottom: 36px;
 }
 
 .services__heading {
@@ -830,6 +834,7 @@ a {
 	padding: 0;
 	margin-top: 77px;
 	margin-right: 79px;
+	margin-bottom: 100px;
 }
 
 .services__navigation-list::after {
@@ -850,6 +855,11 @@ a {
 	box-shadow: 0px 1px 0px var(--hover-light-blue), inset 0px 1px 0px var(--special-btn-shadow);
 }
 
+.services__navigation-list-item.active {
+	color: var(--basic-light-blue);
+	background-color: var(--basic-white);
+}
+
 .services__navigation-list-button {
 	display: block;
 	width: 100%;
@@ -861,7 +871,30 @@ a {
 .services__list {
 	margin-top: 40px;
 	grid-column: span 2;
-	background: no-repeat 152px 54px url('../img/bg/bg-trunk.png');
+}
+.services__list-item {
+	display: none;
+}
+
+.services__list-item.active {
+	display: block;
+	padding-bottom: 105px;
+}
+
+.button_credit {
+	margin-top: 28px;
+}
+
+.services__list-item_delivery {
+	background: no-repeat 152px 24px url('../img/bg/bg-trunk.png');
+}
+
+.services__list-item_guarante {
+	background: no-repeat 230px 1px url('../img/bg/bg-guarantie.png');
+}
+
+.services__list-item_credit {
+	background: no-repeat 150px 24px url('../img/bg/bg-credit.png');
 }
 
 .services__list-item-heading {
@@ -1450,7 +1483,10 @@ a {
 	background-color: var(--hover-red);
 }
 
-
+.promo-section__slider-prv-btn:hover,
+.promo-section__slider-next-btn:hover {
+	opacity: 0.7;
+}
 /* click */
 
 .services__navigation-list a:active {
@@ -1615,11 +1651,14 @@ a {
 	background-color: var(--basic-white);
 	width: 620px;
 	margin: 0;
-	position: fixed;
+	position: absolute;
 	z-index: 10;
 	top: 50vh;
 	left: 50vw;
 	transform: translate(-50%, -50%);
+}
+.modal.active {
+	display: block;
 }
 .modal__close {
 	appearance: none;
