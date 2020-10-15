@@ -1,35 +1,35 @@
-const closeModal = document.querySelector('.modal__close');
-const buyBtns = document.querySelectorAll('.goods__action-item_buy-button');
-const successMsg = document.querySelector('.modal_success-popup');
+const closeModalButton = document.querySelector('.modal__close');
+const modalOpenButtonList = document.querySelectorAll('.goods__action-item_buy-button');
+const successMessage = document.querySelector('.modal_success-popup');
 
-closeModal.addEventListener('click', function(evt){
+closeModalButton.addEventListener('click', function(evt){
     evt.preventDefault();
-    if (successMsg.classList.contains('active')){
-        console.log('click');
-        hideSuccessMsg();
+    if (successMessage.classList.contains('active')){
+        showAndHidePopup(successMessage);
     }
 });
 
-for( button of buyBtns ){
+for( button of modalOpenButtonList ){
     button.addEventListener('click', function(evt){
         evt.preventDefault();
-        showSuccessMsg();
+        showAndHidePopup(successMessage);
     });
 }
 
-window.addEventListener('keydown', function(evt){
-    if(evt.keyCode === 27){
-        if (successMsg.classList.contains('active')) {
-            evt.preventDefault();
-            successMsg.classList.remove('active')
-        }
+function showAndHidePopup(popup){
+    if( popup.classList.contains('active') ){
+        popup.classList.remove('active');
+        popup.removeEventListener('keydown', addAndRemoveWindowListener);
+    } else {
+        popup.classList.add('active');
+        window.addEventListener('keydown', addAndRemoveWindowListener);
     }
-});
-
-function showSuccessMsg(){
-    successMsg.classList.add('active');
 }
 
-function hideSuccessMsg(){
-    successMsg.classList.remove('active');
+function addAndRemoveWindowListener(evt){
+    if(evt.key === 'Escape' && successMessage.classList.contains('active')){
+            evt.preventDefault();
+            showAndHidePopup(successMessage);
+            window.removeEventListener('keydown', addAndRemoveWindowListener);
+    }
 }

@@ -1,7 +1,7 @@
-const writeUsBtn = document.querySelector('.button_write-us');
-const closeModalBtns = document.querySelectorAll('.modal__close');
-const buyBtns = document.querySelectorAll('.goods__action-item_buy-button');
-const successMsg = document.querySelector('.modal_success-popup');
+const writeUsButton = document.querySelector('.button_write-us');
+const closeModalButtonList = document.querySelectorAll('.modal__close');
+const modalOpenButtonList = document.querySelectorAll('.goods__action-item_buy-button');
+const successMessage = document.querySelector('.modal_success-popup');
 const openMap = document.querySelector('.show-map');
 const map = document.querySelector('.map');
 const nameInput = document.querySelector('.modal__name input');
@@ -9,146 +9,131 @@ const modal = document.querySelector('.modal');
 
 openMap.addEventListener('click', function(evt){
     evt.preventDefault();
-    showMap();
+    showAndHidePopup(map);
 });
 
-for( button of closeModalBtns ){
+for( button of closeModalButtonList ){
     button.addEventListener('click', function(evt){
         evt.preventDefault();
         if(map.classList.contains('active')){
-            hideMap();
+            showAndHidePopup(map);
         } else if(modal.classList.contains('active')){
-            hideModal();
-        } else if(successMsg.classList.contains('active')){
-            hideSuccessMsg();
+            showAndHidePopup(modal);
+        } else if(successMessage.classList.contains('active')){
+            showAndHidePopup(successMessage);
         }
     });
 }
 
-for( button of buyBtns ){
+for( button of modalOpenButtonList ){
     button.addEventListener('click', function(evt){
         evt.preventDefault();
-        showSuccessMsg();
+            showAndHidePopup(successMessage);
     });
 }
 
-window.addEventListener('keydown', function(evt){
-    if(evt.keyCode === 27){
+function addOrRemoveWindowListeners(evt){
+    if(evt.key === 'Escape'){
         if( map.classList.contains('active') ){
             evt.preventDefault();
-            hideMap();
+            showAndHidePopup(map);
         } else if (modal.classList.contains('active')){
             evt.preventDefault();
-            hideModal();
-        } else if(successMsg.classList.contains('active')) {
+            showAndHidePopup(modal);
+        } else if(successMessage.classList.contains('active')) {
             evt.preventDefault();
-            hideSuccessMsg();
+            showAndHidePopup(successMessage);
         }
     }
-});
+}
 
-writeUsBtn.addEventListener('click', function(evt){
+writeUsButton.addEventListener('click', function(evt){
     evt.preventDefault();
-    showModal();
+    showAndHidePopup(modal);
 });
-
-function showMap(){
-    map.classList.add('active');
+// ####
+function showAndHidePopup(popup){
+    if( popup.classList.contains('active') ){
+        popup.classList.remove('active');
+        window.removeEventListener('keydown', addOrRemoveWindowListeners);
+    } else {
+        popup.classList.add('active');
+        window.addEventListener('keydown', addOrRemoveWindowListeners);
+    }
 }
 
-function hideMap(){
-    map.classList.remove('active');
-}
-
-function showModal(){
-    modal.classList.add('active');
-    nameInput.focus();
-}
-
-function hideModal(){
-    modal.classList.remove('active');
-}
-
-function showSuccessMsg(){
-    successMsg.classList.add('active');
-}
-
-function hideSuccessMsg(){
-    successMsg.classList.remove('active');
-}
 // промо секция слайдер
 
-const nextBtn = document.querySelector('.promo-section__slider-next-btn');
-const prvBtn = document.querySelector('.promo-section__slider-prv-btn');
-let slides = document.getElementsByClassName('promo-section__slider-item');
-let dotsList = document.querySelector('.promo-section__slider-bredcrumbs');
-let dots = document.getElementsByClassName('promo-section__slider-bredcrumbs__item');
+const nextButton = document.querySelector('.promo-section__slider-next-btn');
+const previousButton = document.querySelector('.promo-section__slider-prv-btn');
+let slidesList = document.getElementsByClassName('promo-section__slider-item');
+let dotsContainer = document.querySelector('.promo-section__slider-bredcrumbs');
+let dotsList = document.getElementsByClassName('promo-section__slider-bredcrumbs__item');
 let i = 0;
 
 populateSliderBredcrumbs();
 
 function populateSliderBredcrumbs(){
-    for( let i = 0; i < slides.length; i++ ){
+    for( let i = 0; i < slidesList.length; i++ ){
         let dot = document.createElement('li');
         dot.setAttribute('class', 'promo-section__slider-bredcrumbs__item');
         dot.addEventListener('click', function(evt){
             evt.preventDefault();
-            changeNxtSlide();
+            changeToNextSlide();
         })
-        dotsList.appendChild(dot);
+        dotsContainer.appendChild(dot);
     }
-    dots[0].classList.add('active');
+    dotsList[0].classList.add('active');
 }
 
-nextBtn.addEventListener('click', function(evt){
+nextButton.addEventListener('click', function(evt){
     evt.preventDefault();
-    changeNxtSlide();
+    changeToNextSlide();
 });
-prvBtn.addEventListener('click', function(evt){
+previousButton.addEventListener('click', function(evt){
     evt.preventDefault();
-    changePrvSlide();
+    changeToPreviousSlide();
 });
 
 
-function changePrvSlide(){
-    slides[i].classList.remove('active');
-    dots[i].classList.remove('active');
+function changeToPreviousSlide(){
+    slidesList[i].classList.remove('active');
+    dotsList[i].classList.remove('active');
     i--;
     if( i < 0 ){
-        i = slides.length - 1;
+        i = slidesList.length - 1;
     }
-    slides[i].classList.add('active');
-    dots[i].classList.add('active');
+    slidesList[i].classList.add('active');
+    dotsList[i].classList.add('active');
 };
 
-function changeNxtSlide(){
-    slides[i].classList.remove('active');
-    dots[i].classList.remove('active');
+function changeToNextSlide(){
+    slidesList[i].classList.remove('active');
+    dotsList[i].classList.remove('active');
     i++;
-    if( i >= slides.length ){
+    if( i >= slidesList.length ){
         i = 0;
     }
-    slides[i].classList.add( 'active' );
-    dots[i].classList.add('active');
+    slidesList[i].classList.add( 'active' );
+    dotsList[i].classList.add('active');
 
 }
 
 // сервисы слайдер
 
-const servicesBtnList = document.querySelector('.services__navigation-list');
-let servicesBtns = document.getElementsByClassName('services__navigation-list-item');
-let servicesActions = document.getElementsByClassName('services__navigation-list-button');
-let servicesSlides = document.getElementsByClassName('services__list-item');
+const servicesButtonsContainer = document.querySelector('.services__navigation-list');
+let servicesButtonsList = document.getElementsByClassName('services__navigation-list-item');
+let servicesActionsList = document.getElementsByClassName('services__navigation-list-button');
+let servicesSlidesList = document.getElementsByClassName('services__list-item');
 
-servicesBtnList.addEventListener('click', function(evt){
+servicesButtonsContainer.addEventListener('click', function(evt){
     evt.preventDefault();
-    for(let i = 0; i < servicesBtns.length; i++){
-        servicesSlides[i].classList.remove('active');
-        servicesBtns[i].classList.remove('active');
-        if( evt.target && evt.target === servicesActions[i] ){
-            servicesSlides[i].classList.add('active');
-            servicesBtns[i].classList.add('active');
+    for(let i = 0; i < servicesButtonsList.length; i++){
+        servicesSlidesList[i].classList.remove('active');
+        servicesButtonsList[i].classList.remove('active');
+        if( evt.target && evt.target === servicesActionsList[i] ){
+            servicesSlidesList[i].classList.add('active');
+            servicesButtonsList[i].classList.add('active');
         }
     }
-
 });
