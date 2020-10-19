@@ -1656,30 +1656,20 @@ a {
 	opacity: 1;
 }
 
-/* карта */
-.map {
-	display: none;
-	position: fixed;
-	top: 50vh;
-	left: 50vw;
-	transform: translate(-50%, -50%);
-	margin: 0 auto;
-	border-top: 7px solid var(--basic-red);
-}
-
-.map.active {
-	display: block;
-}
-
 /* модальные окна */
-.modal__name input,
-.modal__email input,
-.modal__text textarea {
+.modal__name,
+.modal__email,
+.modal__taxtarea {
 	appearance: none;
 	border: none;
 	background: none;
 	outline: none;
 	resize: none;
+
+}
+.modal__name input,
+.modal__email input,
+.modal__text textarea {
 	border: 2px solid var(--basic-light-grey);
 	box-sizing: border-box;
 	border-radius: 2px;
@@ -1690,7 +1680,6 @@ a {
 .modal {
 	display: none;
 	background-color: var(--basic-white);
-	width: 620px;
 	max-width: 100%;
 	margin: 0;
 	position: fixed;
@@ -1698,12 +1687,19 @@ a {
 	top: 50vh;
 	left: 50vw;
 	transform: translate(-50%, -50%);
+	box-shadow: 0 4px 20 0 var(--hover-product-shadow);
 }
 
-.modal.active {
+.modal.modal_active {
 	display: block;
 }
+.modal__form {
+	display: none;
+}
 
+.modal__form.modal_active {
+	display: block;
+}
 .modal__close {
 	position: absolute;
 	top: 21px;
@@ -1727,15 +1723,6 @@ a {
 	font-weight: normal;
 	font-size: 18px;
 	line-height: 24px;
-}
-
-.modal__name,
-.modal__email,
-.modal__taxtarea {
-	appearance: none;
-	border: none;
-	background: none;
-	outline: none;
 }
 
 .modal__footer {
@@ -1766,10 +1753,12 @@ a {
 	margin-left: 10px;
 }
 
-.modal__success-popup.active {
+.modal__map {
+	display: none;
+}
+.modal__map.modal_active {
 	display: block;
 }
-
 .modal__success {
 	justify-self: end;
 	display: flex;
@@ -1781,9 +1770,16 @@ a {
 	height: 66px;
 }
 
-.modal__success-message {
+.modal__success-text {
 	font-style: normal;
 	font-weight: bold;
 	font-size: 24px;
 	line-height: 30px;
+}
+
+.modal__success-message {
+	display: none;
+}
+.modal__success-message.modal_active {
+	display: block;
 }

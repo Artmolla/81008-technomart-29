@@ -231,7 +231,7 @@
             <div class="goods__image-container">
                 <ul class="goods__action-list list-reset ">
                   <li class="goods__action-item">
-                    <a class="goods__button goods__button_buy" href="#">
+                    <a class="goods__button goods__button_buy button_modal" href="#">
                     <svg class="action-card-icon" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g opacity="0.3">
                           <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" fill="white" />
@@ -264,7 +264,7 @@
             <div class="goods__image-container">
                 <ul class="goods__action-list list-reset ">
                   <li class="goods__action-item">
-                    <a class="goods__button goods__button_buy" href="#">
+                    <a class="goods__button goods__button_buy button_modal" href="#">
                     <svg class="action-card-icon" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g opacity="0.3">
                           <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" fill="white" />
@@ -297,7 +297,7 @@
             <div class="goods__image-container">
                 <ul class="goods__action-list list-reset ">
                   <li class="goods__action-item">
-                    <a class="goods__button goods__button_buy" href="#">
+                    <a class="goods__button goods__button_buy button_modal" href="#">
                     <svg class="action-card-icon" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g opacity="0.3">
                           <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" fill="white" />
@@ -330,7 +330,7 @@
             <div class="goods__image-container">
                 <ul class="goods__action-list list-reset ">
                   <li class="goods__action-item">
-                    <a class="goods__button goods__button_buy" href="#">
+                    <a class="goods__button goods__button_buy button_modal" href="#">
                     <svg class="action-card-icon" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g opacity="0.3">
                           <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" fill="white" />
@@ -517,9 +517,9 @@
             Вы можете забрать товар сами, заехав в наш офис:
           </p>
           <a class="show-map" href="#" title="Как нас найти">
-          <img src="img/map.jpg" alt="Адрес магазина Техномарт на карте" width="300" height="158">
+          <img class="button_modal button_modal-map-opener" src="img/map.jpg" alt="Адрес магазина Техномарт на карте" width="300" height="158">
           </a>
-          <a href="#" class="button button_write-us">
+          <a href="#" class="button button_write-us button_modal button_modal-form-opener">
             Заблудились? Напишите нам!
           </a>
         </section>
@@ -640,12 +640,12 @@
     </footer>
     <!-- Модальное окно -->
     <div class="modal">
+      <button class="modal__close" aria-label="Закрыть модальное окно">
+        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+          <path fill="#EE3643" d="M13.273 10.5001l7.422-7.42204c.389-.389.389-1.025 0-1.414L19.336.305056c-.389-.3890003-1.025-.3890003-1.414 0L10.5 7.72706 3.07799.305056c-.389-.3890003-1.025-.3890003-1.414 0L.304995 1.66406c-.3890004.389-.3890004 1.025 0 1.414L7.72699 10.5001l-7.420995 7.422c-.3890004.389-.3890004 1.025 0 1.414l1.358995 1.359c.389.389 1.025.389 1.414 0l7.42201-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414l-7.423-7.422z"/>
+        </svg>
+      </button>
       <form class="modal__form" action="#" method="GET">
-        <button class="modal__close" aria-label="Закрыть модальное окно">
-          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
-            <path fill="#EE3643" d="M13.273 10.5001l7.422-7.42204c.389-.389.389-1.025 0-1.414L19.336.305056c-.389-.3890003-1.025-.3890003-1.414 0L10.5 7.72706 3.07799.305056c-.389-.3890003-1.025-.3890003-1.414 0L.304995 1.66406c-.3890004.389-.3890004 1.025 0 1.414L7.72699 10.5001l-7.420995 7.422c-.3890004.389-.3890004 1.025 0 1.414l1.358995 1.359c.389.389 1.025.389 1.414 0l7.42201-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414l-7.423-7.422z"/>
-          </svg>
-        </button>
         <div class="modal__content">
           <div class="modal__name">
             <label for="modal-name">
@@ -672,41 +672,27 @@
           </button>
         </div>
       </form>
-    </div>
-    <!-- Модальное окно (сообщение о добавлении товара в корзину) -->
-    <div class="modal modal_success-popup">
-      <div class="modal__content">
-        <button class="modal__close" aria-label="Закрыть модальное окно">
-          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
-            <path fill="#EE3643" d="M13.273 10.5001l7.422-7.42204c.389-.389.389-1.025 0-1.414L19.336.305056c-.389-.3890003-1.025-.3890003-1.414 0L10.5 7.72706 3.07799.305056c-.389-.3890003-1.025-.3890003-1.414 0L.304995 1.66406c-.3890004.389-.3890004 1.025 0 1.414L7.72699 10.5001l-7.420995 7.422c-.3890004.389-.3890004 1.025 0 1.414l1.358995 1.359c.389.389 1.025.389 1.414 0l7.42201-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414l-7.423-7.422z"/>
-          </svg>
-        </button>
-        <div class="modal__success">
-          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" viewBox="0 0 40 30" fill="none">
-            <path fill="#fff" d="M35.641 1.06596c-.3912-.38873-1.0228-.38873-1.414 0L15.788 19.504c-.3912.3887-1.0228.3887-1.414 0l-8.13998-8.139c-.39118-.3888-1.02282-.3888-1.414 0l-3.535 3.535c-.388734.3911-.388734 1.0228 0 1.414L14.374 29.404c.3912.3887 1.0228.3887 1.414 0l3.536-3.536 1.414-1.414L39.176 6.01596c.3888-.39118.3888-1.02281 0-1.414l-3.535-3.536z"/>
-          </svg>
+      <div class="modal__success-message">
+        <div class="modal__content">
+          <div class="modal__success">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" viewBox="0 0 40 30" fill="none">
+              <path fill="#fff" d="M35.641 1.06596c-.3912-.38873-1.0228-.38873-1.414 0L15.788 19.504c-.3912.3887-1.0228.3887-1.414 0l-8.13998-8.139c-.39118-.3888-1.02282-.3888-1.414 0l-3.535 3.535c-.388734.3911-.388734 1.0228 0 1.414L14.374 29.404c.3912.3887 1.0228.3887 1.414 0l3.536-3.536 1.414-1.414L39.176 6.01596c.3888-.39118.3888-1.02281 0-1.414l-3.535-3.536z"/>
+            </svg>
+          </div>
+          <p class="modal__success-text">
+            Заказ добавлен в корзину!
+          </p>
         </div>
-        <p class="modal__success-message">
-          Заказ добавлен в корзину!
-        </p>
+        <div class="modal__footer">
+          <a class="button" href="#">
+            Оформить заказ
+          </a>
+          <a class="button button_light" href="#">
+            Продолжить покупки
+          </a>
+        </div>
       </div>
-      <div class="modal__footer">
-        <a class="button" href="#">
-          Оформить заказ
-        </a>
-        <a class="button button_light" href="#">
-          Продолжить покупки
-        </a>
-      </div>
-    </div>
-    <!-- Интерактивная карта -->
-    <div class="map">
-      <button class="modal__close" aria-label="Закрыть модальное окно">
-        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
-          <path fill="#EE3643" d="M13.273 10.5001l7.422-7.42204c.389-.389.389-1.025 0-1.414L19.336.305056c-.389-.3890003-1.025-.3890003-1.414 0L10.5 7.72706 3.07799.305056c-.389-.3890003-1.025-.3890003-1.414 0L.304995 1.66406c-.3890004.389-.3890004 1.025 0 1.414L7.72699 10.5001l-7.420995 7.422c-.3890004.389-.3890004 1.025 0 1.414l1.358995 1.359c.389.389 1.025.389 1.414 0l7.42201-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414l-7.423-7.422z"/>
-        </svg>
-      </button>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651595!2d30.320894616006086!3d59.93879418187624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya%20Konyushennaya%20St%2C%2019%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2sua!4v1602492247508!5m2!1sen!2sua" width="940" height="442" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <iframe class="modal__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651595!2d30.320894616006086!3d59.93879418187624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya%20Konyushennaya%20St%2C%2019%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2sua!4v1602492247508!5m2!1sen!2sua" width="940" height="442" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </div>
     <script src="js/script.js"></script>
   </body>
