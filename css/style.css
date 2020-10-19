@@ -1687,7 +1687,7 @@ a {
 	top: 50vh;
 	left: 50vw;
 	transform: translate(-50%, -50%);
-	box-shadow: 0 4px 20 0 var(--hover-product-shadow);
+	box-shadow: 0 4px 20px 0 var(--hover-product-shadow);
 }
 
 .modal.modal_active {
@@ -1755,6 +1755,8 @@ a {
 
 .modal__map {
 	display: none;
+	border-top: 7px solid var(--basic-red);
+
 }
 .modal__map.modal_active {
 	display: block;
