@@ -1,6 +1,6 @@
 (function () {
     const openModalButton = document.querySelectorAll('.button_modal');
-  
+
     const closeModal = function (modal, buttonClose) {
       modal.forEach((element) => {
         element.classList.remove('modal_active');
@@ -31,6 +31,7 @@
       document.querySelector('.modal').classList.add('modal_active');
       if (evt.target.classList.contains('button_modal-form-opener')) {
         document.querySelector('.modal__form').classList.add('modal_active');
+        document.querySelector('#modal-name').focus();
       } else if (evt.target.classList.contains('button_modal-map-opener')) {
         document.querySelector('.modal__map').classList.add('modal_active');
       } else {
@@ -38,7 +39,6 @@
       }
   
       const modalCloseButton = document.querySelector('.modal__close');
-      modalCloseButton.focus();
       modalCloseButton.addEventListener('click', closeModalClickHandler);
       document.addEventListener('keydown', closeModalKeyPressHandler);
     };
