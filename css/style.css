@@ -429,8 +429,8 @@ a {
 	fill: var(--hover-grey);
 }
 
-.personal-area__button:active {
-	background-color: var(--basic-white);
+.personal-area__button:active,
+.catalog .personal-area__button:active{
 	color: var(--basic-light-grey);
 }
 
@@ -706,11 +706,13 @@ a {
 	box-shadow: 0 4px 20px var(--hover-product-shadow);
 }
 
-.goods__item:hover .goods__action-list {
+.goods__item:hover .goods__action-list,
+.goods__item:focus-within .goods__action-list {
 	display: flex;
 }
 
-.goods__item:hover .goods__image {
+.goods__item:hover .goods__image,
+.goods__item:focus-within .goods__image {
 	display: none;
 }
 
@@ -746,6 +748,7 @@ a {
 	color: var(--basic-white);
 	margin-bottom: 10px;
 }
+
 .goods__button {
 	width: 100%;
 	padding: 10px 0;
@@ -1333,7 +1336,6 @@ a {
 	width: 23px;
 	height: 23px;
 	left: 0;
-	opacity: 0.8;
 	content: '';
 	background: url('../img/icons/icon-checkbox-off.svg');
 	background-repeat: no-repeat;
@@ -1345,7 +1347,6 @@ a {
 	height: 27px;
 	z-index: 10;
 	left: 0;
-	opacity: 0.8;
 	content: '';
 	background: url('../img/icons/icon-checkbox-on.svg');
 	background-repeat: no-repeat;
@@ -1357,7 +1358,6 @@ a {
 	position: absolute;
 	top: -5px;
 	left: 0;
-	opacity: 0.8;
 	content: '';
 	background: url('../img/icons/icon-radio-off.svg');
 	background-repeat: no-repeat;
@@ -1369,7 +1369,6 @@ a {
 	position: absolute;
 	top: -5px;
 	left: 0;
-	opacity: 0.8;
 	content: '';
 	background: url('../img/icons/icon-radio-on.svg');
 	background-repeat: no-repeat;
@@ -1380,18 +1379,38 @@ a {
 	opacity: 0.3;
 }
 
-.filter__item-checkbox:hover+label:before,
-.filter__item-radio:hover+label:before,
-.filter__item-checkbox:hover+label:after,
+.filter__item-checkbox:hover+label:before {
+	background: url('../img/icons/icon-checkbox-off-hover.svg') no-repeat;
+}
+
+.filter__item-radio:hover+label:before {
+	background: url('../img/icons/icon-radio-off-hover.svg') no-repeat;
+}
+
+.filter__item-checkbox:hover+label:after {
+	background: url('../img/icons/icon-checkbox-on-hover.svg') no-repeat;
+}
+
 .filter__item-radio:hover+label:after {
-	opacity: 1;
+	background: url('../img/icons/icon-radio-on-hover.svg') no-repeat;
 }
-.filter__item-checkbox:focus+label:before,
-.filter__item-radio:focus+label:before,
-.filter__item-checkbox:focus+label:after,
+
+.filter__item-checkbox:focus+label:before {
+	background: url('../img/icons/icon-checkbox-off-hover.svg') no-repeat;
+}
+
+.filter__item-checkbox:focus+label:after {
+	background: url('../img/icons/icon-checkbox-on-hover.svg') no-repeat;
+}
+
+.filter__item-radio:focus+label:before {
+	background: url('../img/icons/icon-radio-off-hover.svg') no-repeat;
+}
+
 .filter__item-radio:focus+label:after {
-	opacity: 1;
+	background: url('../img/icons/icon-radio-on-hover.svg') no-repeat;
 }
+
 .filter__show-btn {
 	width: 100%;
 	padding: 10px 0;
