@@ -53,14 +53,14 @@
     const nextButton = document.querySelector('.promo-section__slider-next-btn');
     const previousButton = document.querySelector('.promo-section__slider-prv-btn');
     const slidesList = document.getElementsByClassName('promo-section__slider-item');
-    const dotsContainer = document.querySelector('.promo-section__slider-bredcrumbs');
-    const dotsList = document.getElementsByClassName('promo-section__slider-bredcrumbs__item');
+    const dotsContainer = document.querySelector('.promo-section__slider-breadcrumbs');
+    const dotsList = document.getElementsByClassName('promo-section__slider-breadcrumbs__item');
     let i = 0;
     if (nextButton && previousButton) {
       const populateSliderBredcrumbs = function () {
         for (let i = 0; i < slidesList.length; i++) {
           const dot = document.createElement('li');
-          dot.setAttribute('class', 'promo-section__slider-bredcrumbs__item');
+          dot.setAttribute('class', 'promo-section__slider-breadcrumbs__item');
           dot.addEventListener('click', (evt) => {
             evt.preventDefault();
             changeToNextSlide();
