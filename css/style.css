@@ -1244,7 +1244,7 @@ a {
 .page-footer__socials {
 	display: -ms-grid;
 	display: grid;
-	-ms-grid-columns: (1fr)[4];
+	-ms-grid-columns: (1fr);
 	grid-template-columns: repeat(4, 1fr);
 	-webkit-box-align: center;
 	-ms-flex-align: center;
@@ -1813,14 +1813,14 @@ a {
 	color: var(--basic-black);
 }
 
-.site-search:focus+svg path, .site-search:focus+svg g {
-	opacity: 1;
-	fill: var(--basic-red);
-}
-
 .site-search:hover+svg path, .site-search:hover+svg g {
 	opacity: 1;
 	fill: var(--basic-white);
+}
+
+.site-search:focus+svg path, .site-search:focus+svg g {
+	opacity: 1;
+	fill: var(--basic-red);
 }
 
 .site-search:focus+.search-form__icon {
